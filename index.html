@@ -6,23 +6,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
     <script src="https://kit.fontawesome.com/275a21d033.js" crossorigin="anonymous"></script>
     <title>LinkedIn</title>
 </head>
 
 <body>
-    <header class="item">
+    <header>
         <nav class="d-flex">
             <div class="header_logo">
                 <img src="assets/img/linkedin logo.png" alt="LinkedIn Home">
-                <div class="header_search d-flex">
+                <div class="header_search">
 
-                    <i class="fa-solid fa-magnifying-glass header_icons "></i><span>Search</span> 
+                    <i class="fa-solid fa-magnifying-glass header_icons "></i>
+                    <div class="header_search_name">Search</div>
                 </div>
             </div>
             <ul class="d-flex">
-                <li>
-                    <div class="header_navs">
+                <li class="active">
+                    <div class="header_navs ">
                         <i class="fa-solid fa-house"></i>
                         <div class="header_nav_name">Home</div>
                     </div>
@@ -70,21 +72,62 @@
                         <div class="header_nav_name">Post a Job Free <i class="fa-solid fa-caret-down"></i></div>
                     </div>
                 </li>
-                
+
 
             </ul>
 
         </nav>
     </header>
-    <aside id="side1" class="item">
 
-    </aside>
-    <main class="item">
+    <main class="d-flex">
+        <aside id="side1">
+            <div class="profile">
+                <div class="profile_cover">
+                    <img src="assets/img/cover pic.jpeg" alt="">
+                </div>
+                <div class="profile_dp">
+                    <img src="assets/img/dp.jpeg" alt="">
+                </div>
+                <div class="profile_detail">
+                    <p class="name">Tonmay Sardar</p>
+                    <p class="bio">Front End Developer || Html || Css || Javascript || React || Bootstrap</p>
+                    <hr>
+                </div>
+                <div class="profile_stats">
+                    <div class="stats d-flex">
+                        <p class="gen_text">Who's viewed your profile</p>
+                        <p class="blue_text">155</p>
+                    </div>
+                    <div class="stats d-flex">
+                        <p class="gen_text">Impressions on your post</p>
+                        <p class="blue_text">250</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="premium">
+                    <p class="gen_text">
+                        Access exclusive tools & insights
+                    </p>
+                    <p class="premium_plan"> <u>Get hired fast, Try Premium free </u></p>
+                </div>
+                <hr>
+                <div class="saved_item">
+                    <p class="gen_text"> Saved Items</p>
+                </div>
+
+            </div>
+
+
+        </aside>
+        <article>
+
+        </article>
+        <aside id="side2">
+
+        </aside>
 
     </main>
-    <aside id="side2" class="item">
 
-    </aside>
 
 
 </body>

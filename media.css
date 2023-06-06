@@ -1,0 +1,39 @@
+@media screen and (max-width:1044px) {
+    .header_search {
+        font-size: 13px;
+        cursor: pointer;
+        text-align: center;
+        width: auto;
+        background-color: rgb(251, 247, 241);
+        margin-right: -10px;
+
+    }
+    nav{
+        justify-content: center;
+    }
+
+}
+
+
+
+@media screen and (max-width:860px) {
+.header_nav_name,.header_search_name{
+    display: none;
+}
+.active{
+    color: black;
+    border-bottom: none;
+}
+.fa-solid,.fa-regular{
+    font-size: 20px;
+}
+
+}
+
+
+@media screen and (max-width:500px) {
+header nav ul li:nth-last-child(-n+4),.vl{
+    display: none;
+}
+
+}
