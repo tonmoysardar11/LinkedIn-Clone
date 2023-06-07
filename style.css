@@ -32,6 +32,10 @@ header {
     padding: 5px 0;
     box-shadow: 5px 0 5px grey;
     background-color: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1;
 
 }
 
@@ -53,7 +57,7 @@ nav {
     justify-content: flex-start;
     align-items: center;
     width: 250px;
-    background-color: white;
+    background-color: rgb(212, 226, 251);
     height: 32px;
     border-radius: 3px;
     margin: 0 5px;
@@ -95,31 +99,42 @@ nav ul li:hover {
 
 
 main {
-    margin: 20px auto;
+
+
+
+    margin: 80px auto;
     max-width: 1150px;
     justify-content: center;
     flex-wrap: wrap;
 
 
 }
-
-#side1,
-#side2 {
-    min-width: 250px;
-    max-width: 22%;
+.fa-solid,.fa-regular{
+    font-size: 20px;
 }
+
+
 
 #side1 {
     margin: 0px 20px 0px 5px;
+    min-width: 250px;
+    width: 27%;
+}
+#side2 {
+    margin: 0px 5px 0px 20px;
+    min-width: 350px;
+    width: 27%;
 }
 
 article {
-    max-width: 40%;
+    max-width: 43%;
+    min-width: 350px
     
 }
 
 .profile,
-.info {
+.info,
+.news,.status,.post {
     position: relative;
     font-size: 13px;
     box-shadow: 0 0 5px rgba(70, 70, 70, 0.5);
@@ -217,7 +232,7 @@ hr {
 .info {
     padding: 3px;
     position: sticky;
-    top: 62px
+    top: 70px;
 }
 
 .tabs>p {
@@ -253,4 +268,113 @@ hr {
 
 .info .saved_item p::before {
     content: '';
+}
+.news{
+    padding: 10px;
+    margin: 20px 0px;
+}
+.news_heading{
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 700;
+}
+
+.news_content>div{
+    font-weight: 600;
+}
+.news_content>div::before{
+    content: '\f35a';
+    font: var(--fa-font-solid);
+    font-size: 15px;
+    margin: 0px 10px;
+    vertical-align: middle;
+}
+.news_content{
+    margin:15px auto;
+}
+.news_content>span{
+    margin: 5px 34px;
+}
+.reader::before{
+    content: '\f111';
+    font: var(--fa-font-solid);
+    font-size: 5px;
+    margin: 3px;
+    vertical-align: middle;
+}
+.status{
+    padding: 8px;
+}
+.input{
+    justify-content: center;
+    align-items: center;
+}
+
+.input_field{
+    height: 50px;
+    border: 1px solid rgba(70, 70, 70, 0.5);
+    border-radius: 25px;
+    width: 80%;
+    max-width: 400px;
+    margin: 8px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 10px;
+    font-size: 14px;
+}
+#blue>i{
+    color: #0a66c2;
+    margin: 0px 3px;
+}
+#green>i{
+    color: #4aa164;
+    margin: 0px 3px;
+}
+#purple>i{
+    color: #833493;
+    margin: 0px 3px;
+}
+#orange>i{
+    color: #e6880d;
+    margin: 0px 3px;
+}
+.btn_group{
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px 0px;
+}
+.btn_group span{
+    align-items: center;
+}
+.hl{
+    height: 1px;
+    width: 410px;
+    background-color: #464646;
+    margin: 20px auto;
+}
+.filter{
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+}
+.post{
+    padding: 5px;
+    margin: 10px 0;
+    
+}
+.dp{
+    width: 50px;
+    border-radius: 50%;
+    margin: 5px;
+}
+.post_profile{
+    justify-content: flex-start;
+    align-items: center;
+
+}
+.post_content{
+    word-wrap: break-word;
+    margin: 10px 8px;
+    line-height: 18px;
 }

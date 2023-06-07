@@ -1,22 +1,28 @@
-@media screen and (max-width:1044px) {
+@media screen and (max-width:1144px) {
     .header_search {
         font-size: 13px;
         cursor: pointer;
         text-align: center;
         width: auto;
-        background-color: rgb(251, 247, 241);
+        background-color: white;
         margin-right: -10px;
 
     }
     nav{
         justify-content: center;
     }
+    .news{
+        display: none;
+    }
+    .filter{
+        display: none;
+    }
 
 }
 
 
 
-@media screen and (max-width:860px) {
+@media screen and (max-width:870px) {
 .header_nav_name,.header_search_name{
     display: none;
 }
@@ -24,10 +30,25 @@
     color: black;
     border-bottom: none;
 }
-.fa-solid,.fa-regular{
-    font-size: 20px;
-}
 
+
+
+}
+@media screen and (max-width:670px) {
+article{
+    order:1;
+    margin:20px auto;
+}
+#side1{
+    order:2;
+    margin:0px auto;
+    min-width: 350px;
+
+}
+main{
+    flex-direction: column;
+    margin-top: 40px;
+}
 }
 
 
