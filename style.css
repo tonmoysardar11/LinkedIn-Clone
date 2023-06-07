@@ -117,13 +117,13 @@ main {
 
 #side1 {
     margin: 0px 20px 0px 5px;
-    min-width: 250px;
-    width: 27%;
+    width: 250px;
+    max-width: 27%;
 }
 #side2 {
     margin: 0px 5px 0px 20px;
-    min-width: 350px;
-    width: 27%;
+    width: 350px;
+    max-width: 27%;
 }
 
 article {
