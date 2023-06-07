@@ -127,7 +127,7 @@ main {
 }
 
 article {
-    max-width: 43%;
+    max-width: 38%;
     min-width: 350px
     
 }
@@ -271,7 +271,6 @@ hr {
 }
 .news{
     padding: 10px;
-    margin: 20px 0px;
 }
 .news_heading{
     justify-content: space-between;
@@ -349,7 +348,7 @@ hr {
 }
 .hl{
     height: 1px;
-    width: 410px;
+    width: 350px;
     background-color: #464646;
     margin: 20px auto;
 }
