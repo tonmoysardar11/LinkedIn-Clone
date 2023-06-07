@@ -1,110 +1,138 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
-body{
+
+body {
     font-family: sans-serif;
+    background-color: rgb(251, 247, 241);
 }
-.d-flex{
+
+.d-flex {
     display: flex;
 }
-.vl{
+
+.vl {
     background-color: grey;
     height: 100%;
     width: 1px;
 }
-.item{
+
+.item {
     text-align: center;
 }
-.header_icons{
-color: gray;
-margin: 0 10px;
+
+.header_icons {
+    color: gray;
+    margin: 0 10px;
 }
 
-header{
+header {
     color: grey;
     padding: 5px 0;
-    background-color: rgb(251, 247, 241);
+    box-shadow: 5px 0 5px grey;
+    background-color: white;
 
 }
 
-nav{
-    max-width: 1058px;
-    margin: 5px auto;
+nav {
+    max-width: 1150px;
+    margin: 0px auto;
     justify-content: space-between;
+
 }
-.header_logo{
+
+.header_logo {
     display: flex;
     margin: 0 5px;
     align-items: center;
 }
-.header_search{
+
+.header_search {
     display: flex;
     justify-content: flex-start;
     align-items: center;
     width: 250px;
-    background-color: #eef3f8;
+    background-color: white;
     height: 32px;
     border-radius: 3px;
     margin: 0 5px;
 }
-.fa-solid,.fa-regular{
+
+.fa-solid,
+.fa-regular {
     font-size: 15px;
 }
 
-nav ul{
+nav ul {
     list-style: none;
     display: flex;
     flex-wrap: wrap;
     margin: 0 10px;
 }
-nav ul li{
+
+nav ul li {
     padding: 0 15px;
-    font-size:13px ;
+    font-size: 13px;
     cursor: pointer;
     text-align: center;
     margin: auto;
 }
-.active{
+
+.active {
     color: black;
     border-bottom: 2px solid black;
 }
-nav ul li:hover{
-color: black;
+
+nav ul li:hover {
+    color: black;
 
 }
-.header_nav_name{
-margin: 5px 0;
+
+.header_nav_name {
+    margin: 5px 0;
 }
 
 
-main{
-    border: 1px solid black;
+main {
     margin: 20px auto;
-    max-width: 1058px;
+    max-width: 1150px;
+    justify-content: center;
+    flex-wrap: wrap;
+
 
 }
-#side1,#side2{
-max-width: 26%;
+
+#side1,
+#side2 {
+    min-width: 250px;
+    max-width: 22%;
 }
-#side1{
-    margin: 20px 20px 20px 5px;
+
+#side1 {
+    margin: 0px 20px 0px 5px;
 }
-article{
+
+article {
     max-width: 40%;
+    
 }
 
-.profile{
+.profile,
+.info {
     position: relative;
     font-size: 13px;
-    box-shadow: 0 0 5px rgba(70,70,70,0.5);
+    box-shadow: 0 0 5px rgba(70, 70, 70, 0.5);
     border-radius: 10px;
+    background-color: white;
 }
-.profile_cover img{
+
+.profile_cover img {
     width: 100%;
     border-radius: 10px 10px 0 0;
 }
-.profile_dp img{
+
+.profile_dp img {
     width: 70px;
     border-radius: 50%;
     border: 2px solid white;
@@ -113,36 +141,43 @@ article{
     left: 50%;
     transform: translate(-50%);
 }
-.profile_detail{
+
+.profile_detail {
     margin-top: 60px;
     text-align: center;
     color: rgb(70, 70, 70);
 }
-.profile_detail .bio{
+
+.profile_detail .bio {
     margin: 15px 5px;
-    
+
 }
-.name{
+
+.name {
     font-size: 16px;
 }
-.blue_text{
+
+.blue_text {
     color: #0a66c2;
-    
+
     font-weight: bold;
 }
-.gen_text{
+
+.gen_text {
     color: #464646;
-    
-    
+
+
 }
-hr{
+
+hr {
     opacity: 0.25;
 }
-.stats{
-    
+
+.stats {
+
     justify-content: space-between;
     align-items: center;
-    margin:10px;
+    margin: 10px;
     font-weight: 600;
 }
 
@@ -151,29 +186,71 @@ hr{
     margin: 15px auto;
 }
 
-.premium_plan{
+.premium_plan {
     margin: 5px auto;
     justify-content: center;
     align-items: center;
 
-    
+
 }
 
-.premium_plan::before{
+.premium_plan::before {
     font: var(--fa-font-brands);
     content: '\e01e';
     color: rgb(173, 129, 15);
 }
 
-.saved_item{
+.saved_item {
     text-align: start;
     font-weight: 600;
     margin: 10px;
     padding: 0 0 10px 0;
 }
-.saved_item p::before{
-content: '\f02e';
-font: var(--fa-font-solid);  
-font-size: 20px;
-margin:10px 5px ;
+
+.saved_item p::before {
+    content: '\f02e';
+    font: var(--fa-font-solid);
+    font-size: 20px;
+    margin: 10px 5px;
+}
+
+.info {
+    padding: 3px;
+    position: sticky;
+    top: 62px
+}
+
+.tabs>p {
+    margin: 8px;
+    font-weight: 600;
+}
+
+.tabs {
+    margin: 25px 0px;
+}
+
+.groups p {
+    text-align: center;
+}
+
+.group_items {
+    margin: 8px;
+
+}
+
+.group_items::before {
+    content: '\e533';
+    font: var(--fa-font-solid);
+    font-size: 15px;
+    margin: 10px 5px 10px 0px;
+}
+
+.event {
+    margin: 10px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.info .saved_item p::before {
+    content: '';
 }
